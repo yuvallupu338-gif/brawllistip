@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrawlPro Guide - Tier List & Tips</title>
+    <style>
+        :root { 
+            --brawl-yellow: #ffcc00; 
+            --brawl-blue: #3366ff; 
+            --bg-dark: #1a1a2e; 
+            --text-light: #ffffff; 
+        }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: var(--bg-dark); 
+            color: var(--text-light); 
+            margin: 0; 
+            padding: 20px; 
+            text-align: center; 
+        }
+        .container { 
+            max-width: 600px; 
+            margin: auto; 
+            background: rgba(255, 255, 255, 0.1); 
+            padding: 20px; 
+            border-radius: 15px; 
+            box-shadow: 0 8px 32px rgba(0,0,0,0.5); 
+            border: 2px solid var(--brawl-blue);
+        }
+        h1 { 
+            color: var(--brawl-yellow); 
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8); 
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+        h2 { border-bottom: 2px solid var(--brawl-blue); padding-bottom: 10px; }
+        .tier-row { 
+            display: flex; 
+            align-items: center; 
+            background: #2a2a4a; 
+            margin: 10px 0; 
+            border-radius: 8px; 
+            overflow: hidden; 
+        }
+        .tier-label { 
+            padding: 15px; 
+            font-weight: bold; 
+            font-size: 1.5em; 
+            width: 50px; 
+            text-align: center; 
+            color: black;
+        }
+        .tier-s { background-color: #ff6666; }
+        .tier-a { background-color: #ffb366; }
+        .tier-b { background-color: #ffff66; }
+        .tier-c { background-color: #99ff99; }
+        .tier-d { background-color: #66ccff; }
+        .tier-content { padding: 10px; flex-grow: 1; text-align: right; line-height: 1.5; }
+        .vip-box {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            border: 1px dashed var(--brawl-yellow);
+        }
+        input { 
+            width: 90%; 
+            padding: 12px; 
+            margin: 10px 0; 
+            border: none; 
+            border-radius: 8px; 
+            font-size: 1em; 
+            box-sizing: border-box;
+        }
+        button { 
+            background-color: var(--brawl-yellow); 
+            color: black; 
+            border: none; 
+            padding: 12px 25px; 
+            font-size: 1.2em; 
+            font-weight: bold; 
+            border-radius: 8px; 
+            cursor: pointer; 
+            transition: 0.2s;
+            width: 100%;
+            margin-top: 10px;
+            box-sizing: border-box;
+        }
+        button:hover { background-color: #e6b800; transform: scale(1.02); }
+        .hidden { display: none; }
+        .pro-tip {
+            background: #2a2a4a;
+            border-right: 5px solid var(--brawl-yellow);
+            padding: 15px;
+            margin: 15px 0;
+            text-align: right;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BrawlPro Guide 🏆</h1>
+        <p>המדריך המקיף לניצחונות בבראול סטארס (מעודכן למטא הנוכחי)</p>
+
+        <h2>דירוג דמויות נוכחי (Tier List)</h2>
+        <div class="tier-row">
+            <div class="tier-label tier-s">S</div>
+            <div class="tier-content">Cordelius, Charlie, Leon, Crow, Fang, Pearl, Spike, Melodie</div>
+        </div>
+        <div class="tier-row">
+            <div class="tier-label tier-a">A</div>
+            <div class="tier-content">Shelly, Colt, Rico, Stu, Bonnie, Piper, Nani, Buster, Ash, Lola, Maisie, Colette</div>
+        </div>
+        <div class="tier-row">
+            <div class="tier-label tier-b">B</div>
+            <div class="tier-content">Bull, Jessie, Brock, Dynamike, Tick, 8-Bit, Emz, Darryl, Penny, Carl, Jacky, Gus, Mandy, Gray</div>
+        </div>
+        <div class="tier-row">
+            <div class="tier-label tier-c">C</div>
+            <div class="tier-content">El Primo, Rosa, Barley, Poco, Frank, Pam, Bea, Edgar, Griff, Grom, Willow</div>
+        </div>
+        <div class="tier-row">
+            <div class="tier-label tier-d">D</div>
+            <div class="tier-content">Hank, Doug, Mortis, Surge</div>
+        </div>
+
+        <div id="login-section" class="vip-box">
+            <h3 style="color: var(--brawl-yellow);">🔒 אזור ה-VIP (טקטיקות שחקני פרו)</h3>
+            <p>הכנס פרטי משתמש כדי לפתוח קאונטרים סודיים ומדריכי מפות.</p>
+            <input type="text" id="username" placeholder="שם משתמש">
+            <input type="password" id="password" placeholder="סיסמה">
+            <button id="login-btn">פתח את אזור ה-VIP</button>
+            <p style="font-size: 0.9em; margin-top: 15px;">
+                רוצה גישה? <a href="https://wa.me/972509344225?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A8%D7%9B%D7%95%D7%A9%20%D7%9E%D7%A0%D7%95%D7%99%20VIP%20%D7%9C%D7%9E%D7%93%D7%A8%D7%99%D7%9A%20%D7%A9%D7%9C%20%D7%91%D7%A8%D7%90%D7%95%D7%9C%20%D7%A1%D7%98%D7%90%D7%A8%D7%A1!" style="color: var(--brawl-blue);">שלח הודעה בווצאפ לרכישה</a>
+            </p>
+        </div>
+
+        <div id="vip-content" class="hidden">
+            <h2 style="color: var(--brawl-yellow);">🔓 תוכן VIP פתוח!</h2>
+            <div class="pro-tip">
+                <h3>איך לעשות קאונטר ל-Cordelius ו-Charlie? 🛑</h3>
+                <p>הם שולטים עכשיו ב-S-Tier. מול קורדליוס, אל תיתן לו להתקרב כדי לטעון את הסופר - שחק דמויות עם טווח ארוך כמו Piper או Nani. מול צ'ארלי, שמור תחמושת למקרה שהיא זורקת עליך את הפקעת (Cocoon) שלה או תשתמש בדמויות עם נזק מהיר כדי לשבור אותה מבפנים.</p>
+            </div>
+            <div class="pro-tip">
+                <h3>טקטיקה למפת Brawl Ball ⚽</h3>
+                <p>פאנג (Fang) ומלודי (Melodie) הם מלכי הברוול בול כרגע. עם פאנג, טען את הסופר שלך מרחוק עם הנעל, ואז קפוץ כשהקבוצה היריבה צמודה. עם מלודי, נצל את הניידות שלה כדי לעבור דרך קירות ולייצר זוויות בעיטה מפתיעות.</p>
+            </div>
+            <div class="pro-tip">
+                <h3>למה כדאי להימנע מה-D Tier? 📉</h3>
+                <p>דמויות כמו Mortis ו-Surge דורשות כרגע המון מאמץ כדי להוציא מהן ערך מול המטא הנוכחי. סרג' צריך זמן כדי לעלות רמות, ועד אז המשחק כנראה כבר הוכרע. שמור אותם רק למפות שאתה בטוח בהן ב-100%.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var VIP_USER = "lupu";
+        var VIP_PASS = "1234";
+
+        document.getElementById('login-btn').addEventListener('click', checkVipLogin);
+        document.getElementById('password').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') checkVipLogin();
+        });
+
+        function checkVipLogin() {
+            var user = document.getElementById('username').value.trim();
+            var pass = document.getElementById('password').value.trim();
+            if (user === VIP_USER && pass === VIP_PASS) {
+                document.getElementById('login-section').classList.add('hidden');
+                document.getElementById('vip-content').classList.remove('hidden');
+            } else {
+                alert("שגיאה: פרטי ההתחברות לא נכונים. אנא נסה שוב או רכוש גישה.");
+            }
+        }
+    </script>
+</body>
+</html>
